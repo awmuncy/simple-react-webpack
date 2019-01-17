@@ -23,7 +23,8 @@
     "webpack-cli": "^3.2.1"
   },
   "dependencies": {
+    "path": "^0.12.7",
     "react": "^16.7.0",
-    "react-dom": "^16.7.0",    
+    "react-dom": "^16.7.0"
   }
 }
