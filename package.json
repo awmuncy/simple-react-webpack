@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack --mode development -w",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "serve": "nodemon src/server.js --exec babel-node --presets @babel/preset-env @babel/preset-react"
   },
   "repository": {
     "type": "git",
@@ -14,16 +15,23 @@
   "author": "Allen Muncy",
   "license": "ISC",
   "devDependencies": {
+    "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
     "@babel/preset-env": "^7.2.3",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.5",
     "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.18.9",
+    "path": "^0.12.7",
+    "sass-loader": "^7.1.0",
     "webpack": "^4.28.4",
     "webpack-cli": "^3.2.1"
   },
   "dependencies": {
-    "path": "^0.12.7",
+    "express": "^4.16.4",
     "react": "^16.7.0",
     "react-dom": "^16.7.0"
   }
